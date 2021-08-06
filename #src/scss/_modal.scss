@@ -1,0 +1,77 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all .5s;
+  &__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+  }
+
+  &__content {
+    max-width: 800px;
+    background-color: #fff;
+    color: #000;
+    padding: 30px;
+    position: relative;
+    transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+    opacity: 0;
+    transition: all .5s;
+  }
+
+  &__close {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__title {
+    font-size: 40px;
+    margin-bottom: 1em;
+  }
+
+  &__text {
+
+  }
+}
+
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+.modal.open .modal__content {
+  opacity: 1;
+  transform: perspective(600px) translate(0, 0) rotateX(0deg);
+}
+
+
+.galerry {
+  margin: 0 auto;
+  padding: 50px 10px;
+  text-align: center;
+}
+.gallery {
+  text-align: center;
+		&__linl {
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      color:red;
+      border: 1px solid pink;
+      margin: 10px;
+		}
+}

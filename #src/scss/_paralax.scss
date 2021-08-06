@@ -1,0 +1,14 @@
+.section-1 {
+  @include adaptiv-value('padding', 50, 10, 0);
+  margin-top: 50px;
+}
+.content {
+  &__title {
+    text-align: center;
+    @include adaptiv-value('font-size', 40, 16, 0);
+  }
+  &__text {
+    text-align: center;
+    @include adaptiv-value('font-size', 30, 12, 0);
+  }
+}

@@ -1,0 +1,96 @@
+.header {
+  background-color: grey;
+  //@include adaptiv-value('padding', 20, 10, 0);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0 0 50px 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+
+  &__nav {
+    max-width: 60%;
+  }
+}
+
+.logo {
+  @include adaptiv-value('flex-basis', 600, 10, 3);
+  justify-content: space-around;
+
+  &__title {}
+
+  &__img {
+    width: 70px;
+  }
+}
+
+.nav {
+  flex-basis: 60%;
+
+  &__menu {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__menu-span {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin-left: auto;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 2px;
+      background-color: black;
+      position: absolute;
+      top: 10px;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: -10px;
+      width: 30px;
+      height: 2px;
+      background-color: black;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__item {}
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    @include adaptiv-value('font-size', 20, 10, 0);
+  }
+}

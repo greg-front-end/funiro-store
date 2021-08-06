@@ -1,0 +1,37 @@
+.wrapper {
+}
+.title {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.image-slider {
+		&__wrapper {
+		}
+
+		&__slide {
+		}
+
+		&__image {
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+		}
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+  display: block;
+  z-index: 99;
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}

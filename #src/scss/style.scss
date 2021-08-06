@@ -1,0 +1,55 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+$mainColor: #3A3A3A;
+$orangeColor: #E89F71;
+$greyColor: #898989;
+$darkGreyColor: #616161;
+
+
+@import 'fonts';
+@import 'normalize';
+@import 'grid';
+@import 'libs';
+@import 'global';
+@import 'icons';
+
+
+@import 'swiper';
+@import 'slider';
+@import 'header';
+@import 'paralax';
+@import 'slider';
+@import 'accordion';
+@import 'modal';
+@import 'forms';
+@import 'footer';
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  font-size: 16px;
+  color: $mainColor;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
