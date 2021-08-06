@@ -424,7 +424,8 @@ template {
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1270px;
+  padding: 0px 15px;
   margin: 0 auto;
 }
 
@@ -1015,102 +1016,10 @@ button.swiper-pagination-bullet {
 }
 
 .header {
-  background-color: grey;
-  position: fixed;
-  width: 100%;
-  left: 0;
+  position: absolute;
   top: 0;
-  margin: 0 0 50px 0;
-}
-
-.header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  max-width: 30%;
-}
-
-.header__nav {
-  max-width: 60%;
-}
-
-.logo {
-  -ms-flex-preferred-size: calc( 10px + 590 * ((100vw - 320px) / 1600));
-      flex-basis: calc( 10px + 590 * ((100vw - 320px) / 1600));
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.logo__img {
-  width: 70px;
-}
-
-.nav {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
-}
-
-.nav__menu {
-  display: none;
-}
-
-.nav__menu-span {
-  width: 30px;
-  height: 2px;
-  background-color: black;
-  margin-left: auto;
-  position: relative;
-}
-
-.nav__menu-span::before {
-  content: '';
-  display: inline-block;
-  width: 30px;
-  height: 2px;
-  background-color: black;
-  position: absolute;
-  top: 10px;
-}
-
-.nav__menu-span::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: -10px;
-  width: 30px;
-  height: 2px;
-  background-color: black;
-}
-
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-transform: uppercase;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: black;
-  font-size: calc( 10px + 10 * ((100vw - 320px) / 1600));
+  left: 0;
+  width: 100%;
 }
 
 .section-1 {
@@ -1762,16 +1671,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .nav__list {
-    display: none;
-  }
-
   .accordion {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

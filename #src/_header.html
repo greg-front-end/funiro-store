@@ -1,34 +1,72 @@
 
   <header class="header">
     <!-- lock-padding НУЖЕН для фиксации левого скрола и стабильноый работы -->
-    <div class="header__content lock-padding">
-      <div class="header__logo logo">
-        <div class="logo__title">
-          Company name
+    <div class="header__wrapper lock-padding">
+      <div class="header__container container">
+        <div class="header__body">
+          <div class="header__main">
+            <a href="##" class="header__logo">Funiro.</a>
+            <div class="header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="##" class="menu__link">Products</a>
+                    <button data-spoller type="button" class="menu__arrow _icon-arrow-down"></button>
+                    <ul class="menu__sub-list">
+                      <li class="menu__sub-item">
+                        <a href="##" class="menu__sub-link">Product #1</a>
+                        <a href="##" class="menu__sub-link">Product #2</a>
+                        <a href="##" class="menu__sub-link">Product #3</a>
+                        <a href="##" class="menu__sub-link">Product #4</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a href="##" class="menu__link">Rooms</a>
+                    <button data-spoller type="button" class="menu__arrow _icon-arrow-down"></button>
+                    <ul class="menu__sub-list">
+                      <li class="menu__sub-item">
+                        <a href="##" class="menu__sub-link">Room #1</a>
+                        <a href="##" class="menu__sub-link">Room #2</a>
+                        <a href="##" class="menu__sub-link">Room #3</a>
+                        <a href="##" class="menu__sub-link">Room #4</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a href="##" class="menu__link">Inpirations</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header__search search-form">
+            <div class="search-form">
+              <button type="button" class="search-form__icon _icon-search"></button>
+              <form action="#" class='search-form__item' id="form">
+                <button type="submit" class="search-form__icon _icon-search"></button>
+                <input autocomplete="off" type="text" name="form[]" data-value="Search for minimalist chair" class="search-form__input">
+              </form>
+            </div>
+          </div>
+          <div class="header__actions actions-header">
+            <a href="##" class="actions-header__item actions-header__item_favorites _icon-favorite"></a>
+            <div class="actions-header__item cart-header">
+              <a href="##" class="cart-header__icon _icon-cart"></a>
+              <div class="cart-header__body">
+                <ul class="cart-header__list cart-list"></ul>
+              </div>
+            </div>
+            <a href="##" class="actions-header__item actions-header__item_user _ibg">
+              <img src="./images/avatar.jpg" alt="avatar">
+            </a>
+          </div>
+          <button type="button" class="icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <img src="images/Screenshot-1.png" alt="" class="logo__img">
       </div>
-      <nav class="header__nav nav">
-        <div class="nav__menu">
-          <span class="nav__menu-span"></span>
-        </div>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Menu</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Service</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Contact</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Write us</a>
-          </li>
-        </ul>
-      </nav>
     </div>
   </header>
