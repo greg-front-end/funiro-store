@@ -10,6 +10,7 @@
 @import 'fonts';
 @import 'normalize';
 @import 'grid';
+@import 'null';
 
 $mainColor: #3A3A3A;
 $orangeColor: #E89F71;
@@ -17,6 +18,9 @@ $greyColor: #898989;
 $darkGreyColor: #616161;
 $maxWidth: 1440px;
 // $maxWidthContaier: 1270;
+$md2: 991.98;
+$md3: 767.98;
+
 
 @import 'libs';
 @import 'global';
@@ -45,6 +49,7 @@ body {
   font-family: "Gilroy";
   font-size: 16px;
   color: $mainColor;
+  background-color: #F9F1E7;
 }
 
 .page {
